@@ -74,7 +74,7 @@
 ![~UCC@UV7PW6I}YQ_2Q6OYXJ](https://user-images.githubusercontent.com/78532744/136744191-ad548f8b-b024-4f8d-942c-42e661aa5f89.png)
 
 
-配置OK后，之后需要将华为云的私钥文件下载下来，将其存在某一位置
+配置OK后，之后需要将华为云的私钥文件下载下来，将其存在某一位置,然后执行命令
 
 ak：指的是华为云的AK；sk：指的是华为云的SK；region：指的是对应的区域，如cn-south-1；
 
