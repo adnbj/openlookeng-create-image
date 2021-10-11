@@ -29,7 +29,8 @@
 
 2. 创建密钥对，获取私钥和公钥信息
 
-![image-20211011111645513](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211011111645513.png)
+![X 7ABADWM 52KXY{{O ~T4B](https://user-images.githubusercontent.com/78532744/136743822-c1e3c308-d47c-45ac-b086-65eef0283994.png)
+
 
 
 
@@ -46,8 +47,9 @@
    **terraform**
 
    如果回显如下则说明配置正确，terraform可以运行。
+![O@)7Q)F$~I PZR)D%B J98K](https://user-images.githubusercontent.com/78532744/136744032-4018a7c4-aa38-4d7f-916c-fde0fedbaf0c.png)
 
-   ![](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211011112835939.png)
+   
 
 #### 步骤二：给terraform创建一个文件夹（terraform 执行时会对这个文件夹进行扫描）
 
@@ -57,15 +59,20 @@
 
 该步骤是对HuaweiCloud Provider下载并安装。在保证terraform安装成功之后，在创建文件夹中有provider.tf这个文件，如下图，这里提供了下载对应的版本，（注意版本问题，有些版本不支持一些语法的使用）
 
-![image-20211011113954054](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211011113954054.png)
 
-执行terraform，保证出现下图的成功样式，可能出现网络问题未成功，多执行几次![image-20211011114411815](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211011114411815.png)
+![LG155T@2K`~IT1N60L$QO~A](https://user-images.githubusercontent.com/78532744/136744082-ab03f99f-500c-4393-a190-dbbce782f16e.png)
+
+执行terraform，保证出现下图的成功样式，可能出现网络问题未成功，多执行几次!
+![U H `ZT36QHT QZA4W4 41T](https://user-images.githubusercontent.com/78532744/136744129-32c1a3b3-c2aa-4e1e-b1ed-6b04d0682557.png)
+
 
 
 
 #### 步骤四：执行terraform apply 创建出镜像
 
-​      在执行前需要配置一些东西，这里需要从git上拉取仓库，需要将在华为云中创建的密钥对中的公钥配置在Git上，如下图![image-20211011135345431](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211011135345431.png)
+​      在执行前需要配置一些东西，这里需要从git上拉取仓库，需要将在华为云中创建的密钥对中的公钥配置在Git上，如下图!
+![~UCC@UV7PW6I}YQ_2Q6OYXJ](https://user-images.githubusercontent.com/78532744/136744191-ad548f8b-b024-4f8d-942c-42e661aa5f89.png)
+
 
 配置OK后，之后需要将华为云的私钥文件下载下来，将其存在某一位置
 
@@ -83,7 +90,8 @@ terraform apply -var="region=xxx" -var="ak=xxx" -var="sk=xxx" -var="privateUrl=x
 
 2、可以选择在variables.tf这个配置文件中写入默认值，当有默认值时就不需要传入参数，如下图
 
-![image-20211011140327944](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211011140327944.png)
+![)YFH)K46X8S RE{%L(MSSGX](https://user-images.githubusercontent.com/78532744/136744222-89186997-a064-4276-981c-0c06d5231b9d.png)
+
 
 3、直接执行terraform apply命令，根据提示输入对应的正确的值
 
