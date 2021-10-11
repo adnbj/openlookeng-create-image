@@ -101,7 +101,7 @@ terraform apply -var="region=xxx" -var="ak=xxx" -var="sk=xxx" -var="privateUrl=x
 
 
 
-#### 另外：shell脚本是给ecs生成所需要的环境，可以根据自己的需要来进行更改shell脚本
+#### 另外：shell脚本是给ecs生成所需要的环境，根据ecs来生成镜像。（可以根据自己的需要来进行更改shell脚本）
 
 
 
