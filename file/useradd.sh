@@ -43,13 +43,6 @@ cp /tmp/id_rsa  .ssh/
 chmod 600 .ssh/id_rsa
 chmod 644 .ssh/id_rsa.pub
 
-chmod 700 .ssh
-
-cat .ssh/id_rsa.pub >> .ssh/authorized_keys
-
-chmod 600 .ssh/authorized_keys
-
-
 source /etc/profile
 
 cp /tmp/maven.sh ./
@@ -85,6 +78,9 @@ else
     echo "拉取hetu-maven-plugin成功"
 fi
 
+chmod 700 .ssh
+cat .ssh/id_rsa.pub >> .ssh/authorized_keys
+chmod 600 .ssh/authorized_keys
 
 cd hetu-maven-plugin
 mvn clean install -DskipTests
