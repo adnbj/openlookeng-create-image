@@ -23,9 +23,9 @@
 
 1. [华为云 AccessKey/SecretKey/region](https://support.huaweicloud.com/devg-apisign/api-sign-provide-aksk.html)
 
-   ![image-20211011111556764](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211011111556764.png)
-
    
+   ![77(}MV4MFZKC5@V9%N7%6WT](https://user-images.githubusercontent.com/78532744/136743740-bcda4af9-4bff-450a-8388-a75acdff0ba7.png)
+
 
 2. 创建密钥对，获取私钥和公钥信息
 
