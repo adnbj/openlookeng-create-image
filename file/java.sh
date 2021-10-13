@@ -73,12 +73,12 @@ cp /tmp/daemon.json /etc/docker/
 service docker restart
 
 #docker 拉取的
-docker pull mysql:8.0.15
-docker pull prestodb/hdp2.6-hive
-docker pull testcontainers/ryuk:0.3.0
-docker pull mongo:3.4.0
-docker pull enmotech/opengauss:1.1.0
-docker pull microsoft/mssql-server-linux:2017-CU13
+#docker pull mysql:8.0.15
+#docker pull prestodb/hdp2.6-hive
+#docker pull testcontainers/ryuk:0.3.0
+#docker pull mongo:3.4.0
+#docker pull enmotech/opengauss:1.1.0
+#docker pull microsoft/mssql-server-linux:2017-CU13
 cp ./id_rsa /tmp/
 cp ./id_rsa.pub /tmp/
 
