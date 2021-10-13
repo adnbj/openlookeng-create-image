@@ -57,7 +57,7 @@ resource "null_resource" "provision" {
   provisioner "remote-exec" {
     connection {
       user     = "root"
-      private_key = file("./terraform-test.pem")
+      private_key = file("./id_rsa")
       host     = huaweicloud_vpc_eip.myeip.address
     }
  
