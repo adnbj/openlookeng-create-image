@@ -11,5 +11,5 @@ terraform {
 provider "huaweicloud" {
   region      = var.region
   access_key  = var.ak
-  secret_key  = var.sk
+  secret_key  = "cn-south-1"
 }
