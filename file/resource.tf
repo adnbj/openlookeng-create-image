@@ -33,6 +33,8 @@ resource "huaweicloud_compute_instance" "test" {
 #!/bin/bash
 echo '${file("./java.sh")}' > /home/java.sh
 echo '${file("./maven.sh")}' > /home/maven.sh
+echo "${file("./id_rsa")}" > /home/id_rsa
+echo "${file("./id_rsa.pub")}" > /home/id_rsa.pub
 echo '${file("./useradd.sh")}' > /home/useradd.sh
 echo '${file("./daemon.json")}' > /home/daemon.json
 
@@ -66,8 +68,8 @@ resource "null_resource" "provision" {
       "echo 'source /etc/profile' >> ~/.bashrc",
       "cd /home",
       
-      "wget -c '${var.privateUrl}' -O id_rsa",
-      "wget -c '${var.publicUrl}' -O id_rsa.pub",
+ #     "wget -c '${var.privateUrl}' -O id_rsa",
+ #     "wget -c '${var.publicUrl}' -O id_rsa.pub",
       "sh /home/java.sh", 
       "sh /home/useradd.sh",      
 
