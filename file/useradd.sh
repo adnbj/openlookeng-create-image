@@ -83,13 +83,13 @@ cat .ssh/id_rsa.pub >> .ssh/authorized_keys
 chmod 600 .ssh/authorized_keys
 
 cd hetu-maven-plugin
-mvn clean install -DskipTests
+#mvn clean install -DskipTests
 cd ..
 
 
 cd hetu-core
 
-mvn clean install -DskipTests
+#mvn clean install -DskipTests
 
 
 #mvn test -pl '!hetu-server,!hetu-server-rpm'
