@@ -11,4 +11,9 @@ variable "sk"{
   
 }
 
+variable "subnet"{
+  type = string
+  
+}
+
 
