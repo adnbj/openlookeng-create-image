@@ -10,7 +10,7 @@ terraform {
 
 # Configure the HuaweiCloud Provider
 provider "huaweicloud" {
-  region      = "cn-south-1"
+  region      = var.region
   access_key  = var.ak
   secret_key  = var.sk
 }
