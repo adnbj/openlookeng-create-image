@@ -2,7 +2,7 @@ data "huaweicloud_availability_zones" "test" {}
 
 
 data "huaweicloud_vpc_subnet" "test" {
-  name = "subnet-3dd8"
+  name = var.subnet
 }
 
 resource "huaweicloud_compute_keypair" "test-keypair" {
