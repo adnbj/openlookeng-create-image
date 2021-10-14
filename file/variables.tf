@@ -11,17 +11,4 @@ variable "sk"{
   
 }
 
-variable "privateUrl"{
-  type = string
-}
 
-variable "publicUrl"{
-  type = string
-  
-}
-
-
-variable "url"{
-  type = string
-  
-}
