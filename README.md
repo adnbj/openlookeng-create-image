@@ -60,19 +60,21 @@
 
 进行参数化构建，创建5个密码参数ak/sk/public/region/subnet，第一个ak是华为云 AccessKey，第二个sk指的是SecretKey，第三个public为密钥对中公钥内容，第四个region指的是华为云的区域，第5个指的是子网的名字
 
-![image-20211015101053577](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015101053577.png)
+![image](https://user-images.githubusercontent.com/78532744/137423493-556e08f0-add4-44d1-85c9-d05cedde81fe.png)
+
 
 之后配置私钥，这些参数在shell中有使用，如果改变名字需要在shell中也一起改变
 
-![image-20211015101854295](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015101854295.png)
+![image](https://user-images.githubusercontent.com/78532744/137423509-5ee9682c-39df-4288-ab80-5018c42b3b69.png)
 
 ​       
 
 #### 步骤三：在shell中添加脚本信息，然后对这个job进行构建
 
 ​         
+![image](https://user-images.githubusercontent.com/78532744/137423549-56cc6de2-2f13-484b-9b23-88e41e9ee35d.png)
 
-![image-20211015103036623](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015103036623.png)![image-20211015103120842](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015103120842.png)
+![image](https://user-images.githubusercontent.com/78532744/137423571-1b3e1e12-cc92-42ca-a4bb-54591c5a44bd.png)
 
 ​      将job.txt内容复制到shell中，之后构建job
 
