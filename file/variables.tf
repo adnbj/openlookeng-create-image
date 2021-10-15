@@ -16,4 +16,8 @@ variable "subnet"{
   
 }
 
+variable "public"{
+  type = string
+}
+
 
