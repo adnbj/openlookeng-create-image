@@ -23,21 +23,24 @@
 
 1. [华为云 AccessKey/SecretKey/region](https://support.huaweicloud.com/devg-apisign/api-sign-provide-aksk.html)
 
-   ![image-20211011111556764](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211011111556764.png)
+  ![image](https://user-images.githubusercontent.com/78532744/137423308-202d5c2e-5dcd-44fa-a83a-0ebe8e4dddd7.png)
 
    
 
 2. 创建密钥对，获取私钥和公钥信息
 
-![image-20211011111645513](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211011111645513.png)
+![image](https://user-images.githubusercontent.com/78532744/137423328-25b51e17-b47c-40a9-8039-d4c6a4da70ac.png)
 
-3.子网![image-20211015091621686](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015091621686.png)
+3.子网
+
+![image](https://user-images.githubusercontent.com/78532744/137423353-b5d3d8f1-fc9a-4d2c-bcf4-dcacc7208c55.png)
+
+
+![image](https://user-images.githubusercontent.com/78532744/137423388-fb4e18c5-8792-4f68-95d7-a2e34b50913c.png)
 
 
 
 
-
-![image-20211015091644420](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015091644420.png)
 
 
 
@@ -49,7 +52,7 @@
 
 1. 在GitHub上搜索huaweicloud-ecs-plugin
 
-   ![image-20211015092106402](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015092106402.png)
+   ![image](https://user-images.githubusercontent.com/78532744/137423433-2ede9922-8d3e-4480-86b8-1cb621b1a88e.png)
 
    2. 在jenkins按照插件文档配置，配置完成继续下一步操作
 
