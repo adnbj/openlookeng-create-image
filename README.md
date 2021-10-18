@@ -23,21 +23,19 @@
 
 1. [华为云 AccessKey/SecretKey/region](https://support.huaweicloud.com/devg-apisign/api-sign-provide-aksk.html)
 
-   ![image-20211011111556764](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211011111556764.png)
+   ![image](https://user-images.githubusercontent.com/78532744/137701015-357e885a-ad97-4b48-906a-d3223a22968f.png)
 
    
 
 2. 创建密钥对，获取私钥和公钥信息，可以选择导入已有的密钥对
 
-![image-20211011111645513](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211011111645513.png)
-
-3.子网![image-20211015091621686](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015091621686.png)
+![image](https://user-images.githubusercontent.com/78532744/137701060-31d437cd-3e3e-4aab-921f-2e093e0ad574.png)
 
 
+3.子网
+![image](https://user-images.githubusercontent.com/78532744/137701118-aba3525b-059c-4bab-aadb-33bdced9d636.png)
 
-
-
-![image-20211015091644420](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015091644420.png)
+![image](https://user-images.githubusercontent.com/78532744/137701159-5648f077-3b4f-4aac-93ad-3f34b6db93e1.png)
 
 
 
@@ -51,7 +49,7 @@
 
 1. 在GitHub上搜索huaweicloud-ecs-plugin
 
-   ![image-20211015092106402](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015092106402.png)
+   ![image](https://user-images.githubusercontent.com/78532744/137701216-bb8c83e8-3438-4cfe-a4a7-4c68f9205314.png)
 
    2. 在jenkins按照插件文档配置，配置完成继续下一步操作
 
@@ -59,11 +57,10 @@
 
 进行参数化构建，创建5个密码参数ak/sk/public/region/subnet，第一个ak是华为云 AccessKey，第二个sk指的是SecretKey，第三个public为密钥对中公钥内容，第四个region指的是华为云的区域，第5个指的是子网的名字
 
-![image-20211015101053577](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015101053577.png)
-
+![image](https://user-images.githubusercontent.com/78532744/137701250-06ea6160-10b5-4647-9cfb-dc7e99392a72.png)
 之后配置私钥，这些参数在shell中有使用，如果改变名字需要在shell中也一起改变
 
-![image-20211015101854295](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015101854295.png)
+![image](https://user-images.githubusercontent.com/78532744/137701286-3e345297-930b-4e1d-b3ef-e6516c15c6bd.png)
 
 注意公钥和私钥要对应
 
@@ -71,9 +68,8 @@
 
 #### 步骤三：在shell中添加job.txt脚本信息，可以根据自己需求进行一定的修改，然后对这个job进行构建
 
-​         
+![image](https://user-images.githubusercontent.com/78532744/137701317-209f81cc-52d1-49a2-bdc8-e1fd5dbc90ef.png)![image](https://user-images.githubusercontent.com/78532744/137701357-758fd5a5-6447-4c1a-9c34-ad4c7e981cc1.png)
 
-![image-20211015103036623](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015103036623.png)![image-20211015103120842](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015103120842.png)
 
 ​      将job.txt内容复制到shell中，之后构建job
 
