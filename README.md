@@ -93,33 +93,40 @@
 
    如果回显如下则说明配置正确，terraform可以运行。
 
-![image-20211018142340188](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211018142340188.png)
+![image](https://user-images.githubusercontent.com/78532744/137701546-ea093244-c44f-4ffe-a4ea-63c9516b087f.png)
+
 
 注意版本问题，有些版本不支持某些terraform的特定版本，目前使用的是v1.0.0，如下图
 
-![image-20211018142606294](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211018142606294.png)
+![image](https://user-images.githubusercontent.com/78532744/137701580-bffbf0a2-a8e9-4a75-843d-ad85102aa5e5.png)
+
 
 #### 步骤二：为terraform创建一个文件夹。为其导入一些文件，或者自己创建
 
 
 
-![image-20211018143440479](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211018143440479.png)
+![image](https://user-images.githubusercontent.com/78532744/137701616-82434f1e-86fd-4f6c-a6f7-a16672708687.png)
 
 
 
 如图，可以在GitHub上进行搜索openlookeng-create-image，点进文件夹，出现这些文件，其中后缀为 .tf的文件为terraform的语法，另外的shell脚本可以根据自己的需求进行修改，或自己写shell脚本，自己写的脚本如需和terraform结合，需要在resource.tf文件中进行对应的修改。如需传入其他文件，则仿照如下图，可以在创建ecs的时候传入这些文件
 
-![image-20211018144646480](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211018144646480.png)
+![image](https://user-images.githubusercontent.com/78532744/137701653-c84367f1-e81d-4cd7-bf3f-17ea17a18155.png)
+
 
 当ecs创建成功后，如果想在ecs中执行这些脚本，需为其绑定一个公网IP，或为其创建一个公网IP对其进行绑定，目前是通过创建一个eip 并将其与ecs进行绑定。可以根据自己需求进行相应的修改
 
-![image-20211018144955324](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211018144955324.png)
+
+![image](https://user-images.githubusercontent.com/78532744/137701679-534f3bb4-241a-48a5-8f53-9c854dff9fa5.png)
 
 此外，resouce.tf中还需修改一个地方，这个私钥的位置根据自己私钥存放的位置进行对应的修改
 
-![image-20211018150212613](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211018150212613.png)
+![image](https://user-images.githubusercontent.com/78532744/137701723-1f9e9888-5a0b-47c9-8aa4-69d726af7e6a.png)
 
-私钥和公钥要对应，在terraform传入了公钥，如下图![image-20211018150618175](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211018150618175.png)
+
+私钥和公钥要对应，在terraform传入了公钥，如下图
+
+![image](https://user-images.githubusercontent.com/78532744/137701766-8b37df0a-9db3-4ee9-abde-9df7b31bd3c1.png)
 
 
 
@@ -131,7 +138,7 @@ unzip terraform-provider-huaweicloud_1.28.1_linux_amd64.zip -d ~/.terraform.d/pl
 
 执行terraform  init ，出现如图的结果为初始化成功。
 
-![image-20211018151408456](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211018151408456.png)
+![image](https://user-images.githubusercontent.com/78532744/137701798-850bad4c-a3ae-4b8f-a17e-361aef00810e.png)
 
 #### 步骤四：执行terraform apply 去创建资源
 
