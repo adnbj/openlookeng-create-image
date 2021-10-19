@@ -21,7 +21,7 @@ fi
 #apache-maven-3.6
 echo "正在下载maven安装包，请稍等..."
 
-#wget https://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+
 
 wget https://repo.huaweicloud.com/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
 
