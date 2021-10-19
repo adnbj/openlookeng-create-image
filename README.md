@@ -73,7 +73,7 @@
 
 ​      将job.txt内容复制到shell中，之后构建job
 
-构建环境是几个shell的脚本，可根据自己的需求进行修改，也可以改变名字，但名字改变之后需要对resource.tf这个配置文件进行相应的修改，不要遗漏
+构建环境是通过几个shell脚本，可根据自己的需求进行修改，也可以改变名字，但名字改变之后需要对resource.tf这个配置文件进行相应的修改，不要遗漏
 
 构建这个job时，会根据huaweicloud-ecs-plugin这个插件生成一个ecs，然后在ecs中执行方法2中步骤
 
@@ -154,6 +154,5 @@ terraform apply -destroy -var="ak=xxx" -var="sk=xxx" -var="region=xxx" -var="sub
 
 这两条命令是保留 通过terraform创建的镜像资源，删除其他通过terraform 创建的资源，这样成功创建拥有一定环境的镜像
 
-注意通过terraform去生成镜像时，会先生成ecs,eip等，需要这个华为云账号能够创建这些ecs、eip等
-
+注意要生成镜像，首先terraform在华为云中能够创建这些资源（指提供给terraform使用的这个账号在华为云中能够生成这些资源）。
 
