@@ -67,13 +67,17 @@
 进行选择5次，创建5个密码参数内容ak/sk/public/region/subnet这5个，可以选择自定义名字，自定义名字更改需要在对应的地方进行相应的修改，如图![image](https://user-images.githubusercontent.com/78532744/138048480-c877d164-bcec-45c0-95a1-05675eef7d92.png)
 
 参数详情为第一个ak是华为云 AccessKey，第二个sk指的是SecretKey，第三个public为密钥对中公钥内容，第四个region指的是华为云的区域，第5个指的是子网的名字
+
 ![image](https://user-images.githubusercontent.com/78532744/138048545-8a088d0d-fcaa-46ba-a18c-41119623f245.png)
 
 之后配置私钥，可以自定义这些名字
+
 ![image](https://user-images.githubusercontent.com/78532744/138048580-88f17443-90e5-463d-ad21-9c77c567805d.png)
+
 注意公钥和私钥要对应，就是指定凭据中私钥需要和密码参数中公钥匹配
 
 自定义名字需要进行修改
+
 ![image](https://user-images.githubusercontent.com/78532744/138048656-3a916037-c5cb-4cef-bd9c-a1fb9fa6cc1e.png)
 
 ​       
@@ -81,27 +85,37 @@
 #### 步骤三：在shell中添加job.txt脚本信息，可以根据自己需求进行一定的修改，然后对这个job进行构建
 
 GitHub链接地址https://github.com/opensourceways/tools-collection
+
 ![image](https://user-images.githubusercontent.com/78532744/138048791-d4755548-3dec-4c2f-8bc8-f4cad44972e9.png)
+
 ​      将job.txt内容复制到shell中，如下图，之后构建job
+
 ![image](https://user-images.githubusercontent.com/78532744/138048920-989ac2ed-cdf6-4345-a8b4-93f203b3dfd2.png)
 
 构建环境通过几个shell脚本来实现的，可根据自己的需求进行修改，也可以改变名字，但名字改变之后需要对resource.tf这个配置文件进行相应的修改，不要遗漏，如图
+
 ![image](https://user-images.githubusercontent.com/78532744/138049071-d849b052-b8d9-4bed-a8af-4d18fdf985a3.png)
+
 构建这个job时，会根据huaweicloud-ecs-plugin这个插件生成一个ecs，然后在ecs中过程和执行方法2步骤相同
 
 构建环境，shell脚本有安装openjdk指定版本等，如图，图中下载的1.8.0.282的版本
+
 ![image](https://user-images.githubusercontent.com/78532744/138049131-5dbef956-19da-47d1-b411-9b80dfedc4ac.png)
 
 安装git，如图
+
 ![image](https://user-images.githubusercontent.com/78532744/138049176-dcd1b1c0-a263-4b32-81d5-8d9c746f12bd.png)
 
 安装maven
+
 ![image](https://user-images.githubusercontent.com/78532744/138049237-e2db4d8e-4a3c-461f-a7ee-7aeece0d64e2.png)
 
 安装docker并设置为开机自启，如图
+
 ![image](https://user-images.githubusercontent.com/78532744/138049274-b4e06666-22a0-4be8-ad6a-f8a712166736.png)
 
 docker镜像源daemon.json内容为
+
 ![image](https://user-images.githubusercontent.com/78532744/138049314-cb8b562d-599f-496a-a248-66971d3578b4.png)
 
 执行useradd.sh脚本，会进行如下操作
@@ -138,19 +152,23 @@ docker镜像源daemon.json内容为
    如果回显如下则说明配置正确，terraform可以运行。
 
 ![image](https://user-images.githubusercontent.com/78532744/138049581-2e614b29-a2e9-478e-9932-c6e30b0c9a9f.png)
+
 注意版本问题，有些版本不支持某些terraform的特定版本，目前使用的是v1.0.0，如下图
 
 ![image](https://user-images.githubusercontent.com/78532744/138049611-3394607d-fa05-4c1f-a619-9b5fe5865b90.png)
+
 #### 步骤二：为terraform创建一个文件夹。为其导入一些文件，或者自己创建
 
 如图，可以在GitHub上进行搜索[opensourceways/tools-collection](https://github.com/opensourceways/tools-collection)，（链接地址为https://github.com/opensourceways/tools-collection），如图
 
 ![image](https://user-images.githubusercontent.com/78532744/138049643-d7557753-e1a2-4274-9cd8-31983dcab3a8.png)
+
 其中后缀为 .tf的文件为terraform的语法，另外的shell脚本是用来生成一些环境，可以根据自己的需求进行修改，或自己写shell脚本，自己写的脚本如需和terraform结合，需要在resource.tf文件中进行对应的修改。如需传入其他文件，则仿照如下图，进行相应的修改，这样在创建ecs的时候会传入这些文件
 
 ![image](https://user-images.githubusercontent.com/78532744/138049707-cc01f9ab-02c2-43d2-8bfd-b2e1398450a5.png)
 
 当ecs创建成功后，如果想在ecs中执行这些脚本，需为其绑定一个公网IP，或为其创建一个公网IP对其进行绑定，目前是通过创建一个eip 并将其与ecs进行绑定。可以根据自己需求进行相应的修改，这里的文件是创建ecs传入的，如果文件不是这些，请进行相应的修改。
+
 ![image](https://user-images.githubusercontent.com/78532744/138049804-19094e26-6c21-415a-9c46-3afdc4809071.png)
 
 此外，resouce.tf中还需修改一个地方，这个私钥的位置根据自己私钥存放的位置进行对应的修改
