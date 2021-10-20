@@ -180,6 +180,7 @@ docker镜像源daemon.json内容为
 ####  步骤三：对terraform进行初始化，这里使用加速去下载provider
 
 wget https://github.com/huaweicloud/terraform-provider-huaweicloud/releases/download/v1.28.1/terraform-provider-huaweicloud_1.28.1_linux_amd64.zip，下载指定的版本
+将其解压到某个位置
 mkdir -p ~/.terraform.d/plugins/local-registry/huaweicloud/huaweicloud/1.28.1/linux_amd64
 unzip terraform-provider-huaweicloud_1.28.1_linux_amd64.zip -d ~/.terraform.d/plugins/local-registry/huaweicloud/huaweicloud/1.28.1/linux_amd64
 
