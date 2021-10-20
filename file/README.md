@@ -23,21 +23,21 @@
 
 1. [华为云 AccessKey/SecretKey/region](https://support.huaweicloud.com/devg-apisign/api-sign-provide-aksk.html)
 
-   ![image-20211011111556764](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211011111556764.png)
+   
+![image](https://user-images.githubusercontent.com/78532744/138047763-b9696541-c37b-46ff-894e-a666cfb21e11.png)
 
    
 
 2. 创建密钥对，获取私钥和公钥信息，可以选择导入已有的密钥对
 
-![image-20211011111645513](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211011111645513.png)
-
-3.子网![image-20211015091621686](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015091621686.png)
+![image](https://user-images.githubusercontent.com/78532744/138047805-e3d91d05-4e11-4a3b-bef8-8ccd38faac1c.png)
 
 
+3.子网![image](https://user-images.githubusercontent.com/78532744/138047849-d1b5817b-5157-4b94-8c73-1ae67e015311.png)
 
 
+![image](https://user-images.githubusercontent.com/78532744/138047888-39923050-20d3-47ca-b2ec-3f4e1c18d339.png)
 
-![image-20211015091644420](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015091644420.png)
 
 
 
@@ -51,7 +51,7 @@
 
 1. 在GitHub上搜索huaweicloud-ecs-plugin插件（插件链接地址为https://github.com/jenkinsci/huaweicloud-ecs-plugin）
 
-   ![image-20211015092106402](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015092106402.png)
+   ![image](https://user-images.githubusercontent.com/78532744/138047950-f272f306-5943-420a-928c-56b6cd14faa8.png)
 
    2. 在jenkins按照插件文档配置，配置完成继续下一步操作
 
@@ -61,17 +61,17 @@
 
 在job中进行配置参数，如图选择
 
-![image-20211020141318057](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211020141318057.png)
+![image](https://user-images.githubusercontent.com/78532744/138047991-12e54dc0-ea70-4996-abf9-db2481f9e3c0.png)
 
-进行选择5次，创建5个密码参数内容ak/sk/public/region/subnet这5个，可以选择自定义名字，自定义名字更改需要在对应的地方进行相应的修改，如图![image-20211020142004150](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211020142004150.png)
+进行选择5次，创建5个密码参数内容ak/sk/public/region/subnet这5个，可以选择自定义名字，自定义名字更改需要在对应的地方进行相应的修改，如图![image](https://user-images.githubusercontent.com/78532744/138048052-1a9adaf4-5d16-4e9f-a485-ae04a139f083.png)
+
 
 参数详情为第一个ak是华为云 AccessKey，第二个sk指的是SecretKey，第三个public为密钥对中公钥内容，第四个region指的是华为云的区域，第5个指的是子网的名字
 
-![image-20211015101053577](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015101053577.png)
+![image](https://user-images.githubusercontent.com/78532744/138048099-aad785bf-bf1b-4a5a-8291-49673aa265a4.png)
 
 之后配置私钥，可以自定义这些名字
 
-![image-20211015101854295](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211015101854295.png)
 
 注意公钥和私钥要对应，就是指定凭据中私钥需要和密码参数中公钥匹配
 
