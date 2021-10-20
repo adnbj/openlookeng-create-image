@@ -64,9 +64,9 @@
 ![image](https://user-images.githubusercontent.com/78532744/138048428-89ea8483-401f-4c52-859f-69d6aa8e46fb.png)
 
 
-进行选择5次，创建5个密码参数内容ak/sk/public/region/subnet这5个，可以选择自定义名字，自定义名字更改需要在对应的地方进行相应的修改，如图![image](https://user-images.githubusercontent.com/78532744/138048480-c877d164-bcec-45c0-95a1-05675eef7d92.png)
+进行选择5次，创建5个密码参数内容为ak/sk/public/region/subnet这5个，可以选择自定义名字，自定义名字需要在对应的地方进行相应的修改，如图![image](https://user-images.githubusercontent.com/78532744/138048480-c877d164-bcec-45c0-95a1-05675eef7d92.png)
 
-参数详情为第一个ak是华为云 AccessKey，第二个sk指的是SecretKey，第三个public为密钥对中公钥内容，第四个region指的是华为云的区域，第5个指的是子网的名字
+参数详情为第一个ak是华为云 AccessKey，第二个sk指的是华为云 SecretKey，第三个public为密钥对中公钥内容，第四个region指的是华为云的区域(比如cn-couth-1)，第5个指的是子网的名字
 
 ![image](https://user-images.githubusercontent.com/78532744/138048545-8a088d0d-fcaa-46ba-a18c-41119623f245.png)
 
@@ -76,7 +76,7 @@
 
 注意公钥和私钥要对应，就是指定凭据中私钥需要和密码参数中公钥匹配
 
-自定义名字需要进行修改
+自定义名字需要在相应的地方进行修改进行修改
 
 ![image](https://user-images.githubusercontent.com/78532744/138048656-3a916037-c5cb-4cef-bd9c-a1fb9fa6cc1e.png)
 
@@ -88,7 +88,7 @@ GitHub链接地址https://github.com/opensourceways/tools-collection
 
 ![image](https://user-images.githubusercontent.com/78532744/138048791-d4755548-3dec-4c2f-8bc8-f4cad44972e9.png)
 
-​      将job.txt内容复制到shell中，如下图，之后构建job
+​将job.txt内容复制到shell中，如下图，之后构建job
 
 ![image](https://user-images.githubusercontent.com/78532744/138048920-989ac2ed-cdf6-4345-a8b4-93f203b3dfd2.png)
 
