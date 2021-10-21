@@ -66,7 +66,11 @@
 
 进行选择5次，创建5个密码参数内容为ak/sk/public/region/subnet这5个，可以选择自定义名字，自定义名字需要在对应的地方进行相应的修改，如图![image](https://user-images.githubusercontent.com/78532744/138048480-c877d164-bcec-45c0-95a1-05675eef7d92.png)
 
-参数详情为第一个ak是华为云 AccessKey，第二个sk指的是华为云 SecretKey，第三个public为密钥对中公钥内容，第四个region指的是华为云的区域(比如cn-couth-1)，第5个指的是子网的名字
+参数详情为第一个ak是华为云 AccessKey，第二个sk指的是华为云 SecretKey，如图
+
+![image](https://user-images.githubusercontent.com/78532744/138196860-5cd9fcef-fba4-4fde-bf32-099f3761fd10.png)
+
+第三个public为密钥对中公钥内容，第四个region指的是华为云的区域(比如cn-couth-1)，第5个指的是子网的名字
 
 ![image](https://user-images.githubusercontent.com/78532744/138048545-8a088d0d-fcaa-46ba-a18c-41119623f245.png)
 
